@@ -1,17 +1,16 @@
-import React from 'react';
 
-function Overview(){
-return(
-    <div>
-    <form>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-        </ul>
-    </form>
+import React from "react";
 
-    </div>
-)
+const Overview = (props) => {
+  const { tasks } = props;
+
+  return (
+    <ul>
+      {tasks.map((task) => {
+        return <li key={task.id}>{task.text}</li>;
+      })}
+    </ul>
+  );
 };
 
 export default Overview;

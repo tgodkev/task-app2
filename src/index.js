@@ -6,7 +6,6 @@ import Overview from './components/Overview';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Overview />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
